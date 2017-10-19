@@ -67,7 +67,7 @@
 ###Using AWS Batch (batch_image_command executable) -- recommended
 
 ```json
-"executable": {
+{"executable": {
         "batch_image_command": {
           "image": "dockerregistryurl/imagename",
           "tag": "0.0.1",
@@ -77,6 +77,7 @@
            "job_role_arn": "<<IAM role for job (see details below)>>",
           "environment_variables": []
         }
+      }
       }
 ```
 
@@ -142,7 +143,7 @@ Make sure to modify the policy document with trust relationships (for the IAM ro
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::123456789:role/sundial-JobInstanceEC2Role-a1b2c3d4e5" (<<sundial job instance role>>)
+        "AWS": "arn:aws:iam::123456789:role/sundial-JobInstanceEC2Role-a1b2c3d4e5"
       },
       "Action": "sts:AssumeRole"
     }
