@@ -112,7 +112,7 @@ More descriptions of the options and client generators for Scala, Ruby, Java, No
 
 # Creating IAM role for job
 
-When using AWS Batch executable, create an IAM role for the job (https://console.aws.amazon.com/iam/home?region=us-east-1#/roles) or use existing one if it is safe to do so. 
+When using AWS Batch executable, create an IAM role for the job or use existing one if it is safe to do so. 
 
 Make sure to modify the policy document with trust relationships (for the IAM role) to include permissions for ec2, ecs-tasks and the job instanceEC2 role (that Sundial has created for its compute environment). Here is a sample policy document-
 ```json
