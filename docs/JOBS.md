@@ -1,5 +1,5 @@
 # Sample job template
-###Using ECS (docker_image_command executable)
+### Using ECS (docker_image_command executable)
 ```json
 {
   "process_definition_name": "SampleProcessName",
@@ -64,7 +64,7 @@
   "paused": false
 }
 ```
-###Using AWS Batch (batch_image_command executable) -- recommended
+### Using AWS Batch (batch_image_command executable) -- recommended
 
 ```json
 {"executable": {
